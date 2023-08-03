@@ -20,11 +20,13 @@ public class PrimeNumberChecker {
             return true;
         }
 
+        // if even then return false
         if (number % 2 == 0) {
             return false;
         }
 
-        int sqrt = (int) Math.sqrt(number) + 1;
+        int sqrt = (int) Math.sqrt(number) + 1; // 6.855654600401044 sqrt
+        // loop through odd numbers like 3,5
         for (int i = 3; i < sqrt; i += 2) {
             System.out.println(i + " number.");
             if (number % i == 0) {
